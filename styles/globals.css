@@ -16,6 +16,7 @@ a {
 }
 
 .app-container {
+  display: flex;
   background-color: rgb(142, 156, 143);
 }
 
@@ -29,5 +30,62 @@ nav.nav-container {
 }
 
 nav.nav-container .nav-item-container {
-  padding: 10px 20px 20px;
+  padding: 10px;
+}
+
+.dashboard {
+  width: 100%;
+}
+
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card-container {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  /* height: 400px; */
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.card-container .info-container {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag-container .tag {
+  color: rgb(1, 1, 1);
+  padding: 5px 10px;
+  margin: 10px 0 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-container .tag:nth-child(1) {
+  margin-left: 0 !important;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50px;
 }

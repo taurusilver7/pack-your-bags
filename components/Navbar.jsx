@@ -4,16 +4,15 @@ import React from "react";
 import logo from "../public/logo.png";
 
 const Navbar = () => {
-  return (
-    <nav className="nav-container">
-      <div className="nav-item-container">
-        <Link href="/">
-          <Image src={logo} alt="logo" width={140} height={140} />
-        </Link>
-      </div>
-      Navbar
-    </nav>
-  );
+	return (
+		<nav className="nav-container">
+			<div className="nav-item-container">
+				<Link href="/">
+					<Image src={logo} alt="logo" width={140} height={140} />
+				</Link>
+			</div>
+		</nav>
+	);
 };
 
 export default Navbar;

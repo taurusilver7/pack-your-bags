@@ -9,10 +9,10 @@ const Maps = ({ latitude, longitude }) => {
   const map = useRef(null);
 
   useEffect(() => {
-    if (map.current) return;
+    if (map?.current) return;
 
     if ((longitude, latitude)) {
-      map.current = new mapboxgl.Map({
+      map?.current = new mapboxgl.Map({
         container: mapContainer.current,
         style: "mapbox://styles/mapbox/streets-v11",
         center: [longitude, latitude],

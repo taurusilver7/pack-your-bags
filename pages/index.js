@@ -19,8 +19,8 @@ export default function Home({ posts }) {
 			</Head>
 
 			<div className="posts-container">
-				{posts?.map((post, index) => (
-					<div key={index}>
+				{posts?.map((post) => (
+					<div key={post.title}>
 						<Link
 							href="/posts/[slug]"
 							as={`/posts/${post.slug.current}`}
